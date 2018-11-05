@@ -1,0 +1,288 @@
+
+body, html{
+    height: 100%;
+    font-family: 'Saira Condensed', sans-serif;
+}
+/* header */
+header{
+    background: url(../img/splash.jpg) center/cover no-repeat;
+    position: relative;
+    height: 100%;
+}
+    /* opacité background */
+header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+}
+    /* boite logo-lien */
+.head-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+img[alt="logo"]{
+    display: block;
+}
+    /* lien */
+.head-box a{
+    border: 2px solid white;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 75px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s all ease-in-out
+}
+.head-box a:hover{
+    padding: 10px 35px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* header end */
+
+/* nav */
+.menu{
+    width: 100%;
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px 0px;
+    display: block;
+}
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+.menu a img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu a:not(.logo-nav):hover {
+    border-bottom: 2px dotted #303030;
+}
+/* nav end */
+
+/* main */
+main{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    width: 940px;
+    margin: 0 auto;
+}
+.titre{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 70px;
+    font-weight: 200;
+}
+/* product */
+.shop{
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.product{
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    left:0;
+}
+.product a{
+    display: inline-block;
+    width: 300px;
+    text-decoration: none;
+    color: black;
+}   
+.product a img{
+    display: inline-block;
+    width: 300px;
+}
+.img-middle{
+    margin: 0px 15px;
+}
+.product-titre{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.price{
+    font-size: 18px;
+}
+/* product end */
+.bandeau{
+    display: block;
+    margin: 0 auto;
+    background: url('../img/bar-promo.jpg') 0 0 no-repeat;
+    height: 63px;
+    margin-top: 30px;
+    position: relative;
+    box-sizing: border-box;
+    width: 940px;
+}
+
+.new{
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    position: absolute;
+    left: 10px;
+    font-family: "garamond-premier-pro",serif;
+    color: #333;
+    font-size: 1.2em;
+    line-height: 63px;
+}
+.shop{
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    position: absolute;
+    right: 10px;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    line-height: 63px;
+}
+/* story */
+.story{
+    position: relative;
+    display: inline-block;
+}
+.story p{
+    font-size:26px;
+    line-height:30px ;
+    padding: 0px 100px;
+    margin-top: 50px;
+}
+/* story end */
+
+/* bloc image */
+img[alt="img4"]{
+    margin-bottom: 40px;
+}
+.bloc{
+    position: relative;
+}
+.bloc-white{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 330px;
+    height: 180px;
+    background: white;
+}
+.bloc-white::after{
+    content: '';
+    width: 320px;
+    height:170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+
+/* bandeau footer */
+.footer{
+    display: block;
+    margin: 0 auto;
+    background: url(../img/bar-footer.jpg) 0 0 no-repeat;
+    height: 152px;
+    position: relative;
+}
+
+.div-footer{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.footer-titre{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin: 16px;
+}
+.footer-p{
+    font-family: "garamond-premier-pro",serif;
+    font-size: 1em;
+    color: #333;
+    margin: 5px;
+}
+.footer-link{
+        font-family: "garamond-premier-pro",serif;
+    font-size: 1em;
+    font-style: italic;
+    text-decoration: none;
+    color: #333;
+}
+.connect a{
+    background-image: url('../img/icones.jpg');
+    height:22px;
+    display: inline-block;
+}
+.fb{
+    width: 12px;
+}
+.ig{
+    width: 21px;
+    background-position: right;
+}
+
+
+.left{
+    display: inline-block;
+    float: left;
+    width: 39%;
+    margin-top: 35px;
+}
+footer{
+    position: relative;
+    margin:25px 0px;
+}
+.left a{
+    text-transform: uppercase;
+    font-family: "garamond-premier-pro",serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    text-align: left;
+    
+}
+.left img{
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+.credits{
+    float: right;
+    text-align: left;
+    width: 39%;
+    margin-top: 35px;
+}
